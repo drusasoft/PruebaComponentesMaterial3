@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarPantallaPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/mToolBarStyle"
+        app:titleTextColor="@color/white"
+        app:titleTextAppearance="@style/mToolbarTextSyle"/>
+
+    <fragment
+        android:id="@+id/NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/navigation_componentes_material3"
+        app:defaultNavHost="true"/>
+
+</LinearLayout>
