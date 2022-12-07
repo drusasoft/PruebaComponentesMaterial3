@@ -5,10 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import com.dssoft.pruebacomponentesmaterial3.R
 import com.dssoft.pruebacomponentesmaterial3.databinding.LayoutFragmentMenuPrincipalBinding
 
 
-
+    private lateinit var navController: NavController
 
 
 class FragmentMenuPrincipal:Fragment()
@@ -16,11 +19,27 @@ class FragmentMenuPrincipal:Fragment()
 
 
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
     {
         val binding = LayoutFragmentMenuPrincipalBinding.inflate(layoutInflater, container, false)
 
+        //***************************** ClickListeners *****************************
+
+        //se navega a los distintos Fragments doinde se prueban algunos componentes Material 3
+        binding.txtOpcionBotones.setOnClickListener {  navController.navigate(R.id.fragmentPruebaBotones) }
+
+        //*************************** Fin ClickListeners *****************************
+
         return binding.root
+    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?)
+    {
+        super.onViewCreated(view, savedInstanceState)
+
+        //Se instancia el objeto NavController
+        navController =Navigation.findNavController(view)
     }
 
 

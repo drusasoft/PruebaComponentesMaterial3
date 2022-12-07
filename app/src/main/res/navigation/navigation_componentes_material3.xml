@@ -4,10 +4,20 @@
     android:id="@+id/navigation_componentes_material3"
     app:startDestination="@id/fragmentMenuPrincipal">
 
-
     <fragment
         android:id="@+id/fragmentMenuPrincipal"
         android:name="com.dssoft.pruebacomponentesmaterial3.Fragments.FragmentMenuPrincipal"
-        android:label="FragmentMenuPrincipal"/>
+        android:label="FragmentMenuPrincipal">
+
+        <action
+            android:id="@+id/irFragmentPruebaBotones"
+            app:destination="@id/fragmentPruebaBotones"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentPruebaBotones"
+        android:name="com.dssoft.pruebacomponentesmaterial3.Fragments.FragmentPruebaBotones"
+        android:label="FragmentPruebaBotones" />
 
 </navigation>

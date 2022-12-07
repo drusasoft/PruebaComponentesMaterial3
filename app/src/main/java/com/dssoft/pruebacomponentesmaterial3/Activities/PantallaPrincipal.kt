@@ -38,10 +38,9 @@ class PantallaPrincipal :AppCompatActivity()
 
             when(navDestination.id){
 
-                navController.graph.startDestinationId->
-                {
-                    binding.toolBarPantallaPrincipal.setTitle("Componentes Material")
-                }
+                navController.graph.startDestinationId-> { binding.toolBarPantallaPrincipal.setTitle("Componentes Material") }
+
+                R.id.fragmentPruebaBotones->{ binding.toolBarPantallaPrincipal.setTitle("Prueba Botones")}
 
             }
 
