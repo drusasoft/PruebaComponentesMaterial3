@@ -35,4 +35,37 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <!--Estilo Para que los Botonoies solo muesten el Icono -->
+    <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!-- Estilo boton Esquinas recortadas -->
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.EsquinasRecortadas" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <!--Estilo Boton forma Exagonar -->
+    <style name="ShapeAppearance.App.SmallComponent2" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">19dp</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.FormaExagonal" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent2</item>
+    </style>
+
 </resources>
