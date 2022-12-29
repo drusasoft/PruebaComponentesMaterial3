@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigationBarItem1"
+        android:enabled="true"
+        android:icon="@drawable/ic_btn1"
+        android:title="Ver"/>
+
+    <item android:id="@+id/navigationBarItem2"
+        android:enabled="true"
+        android:icon="@drawable/ic_btn2"
+        android:title="Favorito"/>
+
+    <item android:id="@+id/navigationBarItem3"
+        android:enabled="true"
+        android:icon="@drawable/ic_btn3"
+        android:title="Tonto"/>
+
+</menu>

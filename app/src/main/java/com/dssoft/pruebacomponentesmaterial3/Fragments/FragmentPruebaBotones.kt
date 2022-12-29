@@ -1,5 +1,6 @@
 package com.dssoft.pruebacomponentesmaterial3.Fragments
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +14,7 @@ import com.dssoft.pruebacomponentesmaterial3.databinding.LayoutFragmentPruebaBot
 
 
 
-class FragmentPruebaBotones:Fragment()
+class FragmentPruebaBotones: Fragment()
 {
 
 

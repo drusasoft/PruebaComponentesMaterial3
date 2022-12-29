@@ -12,12 +12,28 @@
         <action
             android:id="@+id/irFragmentPruebaBotones"
             app:destination="@id/fragmentPruebaBotones"/>
+        <action
+            android:id="@+id/irFragmentPruebaNavigationBar"
+            app:destination="@id/fragmentPruebaNavigationBar" />
+        <action
+            android:id="@+id/irFragmentPruebaNavigationRail"
+            app:destination="@id/fragmentPruebaNavigationRail" />
 
     </fragment>
 
     <fragment
         android:id="@+id/fragmentPruebaBotones"
         android:name="com.dssoft.pruebacomponentesmaterial3.Fragments.FragmentPruebaBotones"
-        android:label="FragmentPruebaBotones" />
+        android:label="FragmentPruebaBotones"/>
+
+    <fragment
+        android:id="@+id/fragmentPruebaNavigationBar"
+        android:name="com.dssoft.pruebacomponentesmaterial3.Fragments.FragmentPruebaNavigationBar"
+        android:label="FragmentPruebaNavigationBar"/>
+
+    <fragment
+        android:id="@+id/fragmentPruebaNavigationRail"
+        android:name="com.dssoft.pruebacomponentesmaterial3.Fragments.FragmentPruebaNavigationRail"
+        android:label="FragmentPruebaNavigationRail" />
 
 </navigation>

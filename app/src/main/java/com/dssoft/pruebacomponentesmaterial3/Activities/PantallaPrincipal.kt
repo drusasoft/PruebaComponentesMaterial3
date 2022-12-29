@@ -10,10 +10,14 @@ import com.dssoft.pruebacomponentesmaterial3.R
 import com.dssoft.pruebacomponentesmaterial3.databinding.LayoutPantallaPrincipalBinding
 
 
+
+
+
 class PantallaPrincipal :AppCompatActivity()
 {
 
     private lateinit var navController: NavController
+
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -25,7 +29,6 @@ class PantallaPrincipal :AppCompatActivity()
         setSupportActionBar(binding.toolBarPantallaPrincipal)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setHomeButtonEnabled(true)
-        supportActionBar!!.setTitle("Culo de Pavo")
 
         //Se Crea Objeto NavController
         navController = Navigation.findNavController(this, R.id.NavHostFragment)
@@ -41,6 +44,10 @@ class PantallaPrincipal :AppCompatActivity()
                 navController.graph.startDestinationId-> { binding.toolBarPantallaPrincipal.setTitle("Componentes Material") }
 
                 R.id.fragmentPruebaBotones->{ binding.toolBarPantallaPrincipal.setTitle("Prueba Botones")}
+
+                R.id.fragmentPruebaNavigationBar->{ binding.toolBarPantallaPrincipal.setTitle("Navigation Bar") }
+
+                R.id.fragmentPruebaNavigationRail->{ binding.toolBarPantallaPrincipal.setTitle("Navigation Rail") }
 
             }
 

@@ -56,7 +56,7 @@
         <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
     </style>
 
-    <!--Estilo Boton forma Exagonar -->
+    <!--Estilo Boton forma Exagonal -->
     <style name="ShapeAppearance.App.SmallComponent2" parent="ShapeAppearance.Material3.SmallComponent">
         <item name="cornerFamily">cut</item>
         <item name="cornerSize">19dp</item>

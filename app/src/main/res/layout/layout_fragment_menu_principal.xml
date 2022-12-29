@@ -21,4 +21,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/txtOpcionNavigationBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="Prueba NavigationBar"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_texto_pulsacion"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOpcionBotones" />
+
+    <TextView
+        android:id="@+id/txtOpcionNavigationRail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="Prueba NavigationRail"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_texto_pulsacion"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOpcionNavigationBar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

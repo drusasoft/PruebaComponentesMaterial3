@@ -1,5 +1,6 @@
 package com.dssoft.pruebacomponentesmaterial3.Fragments
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,11 +12,13 @@ import com.dssoft.pruebacomponentesmaterial3.R
 import com.dssoft.pruebacomponentesmaterial3.databinding.LayoutFragmentMenuPrincipalBinding
 
 
-    private lateinit var navController: NavController
 
 
-class FragmentMenuPrincipal:Fragment()
+
+class FragmentMenuPrincipal: Fragment()
 {
+
+    private lateinit var navController: NavController
 
 
 
@@ -27,6 +30,8 @@ class FragmentMenuPrincipal:Fragment()
 
         //se navega a los distintos Fragments doinde se prueban algunos componentes Material 3
         binding.txtOpcionBotones.setOnClickListener {  navController.navigate(R.id.fragmentPruebaBotones) }
+        binding.txtOpcionNavigationBar.setOnClickListener { navController.navigate(R.id.irFragmentPruebaNavigationBar) }
+        binding.txtOpcionNavigationRail.setOnClickListener { navController.navigate(R.id.irFragmentPruebaNavigationRail) }
 
         //*************************** Fin ClickListeners *****************************
 
@@ -39,7 +44,7 @@ class FragmentMenuPrincipal:Fragment()
         super.onViewCreated(view, savedInstanceState)
 
         //Se instancia el objeto NavController
-        navController =Navigation.findNavController(view)
+        navController = Navigation.findNavController(view)
     }
 
 
