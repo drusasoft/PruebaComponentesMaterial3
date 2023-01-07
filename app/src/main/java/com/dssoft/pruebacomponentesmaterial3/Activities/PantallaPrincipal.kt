@@ -1,6 +1,7 @@
 package com.dssoft.pruebacomponentesmaterial3.Activities
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
@@ -48,6 +49,8 @@ class PantallaPrincipal :AppCompatActivity()
                 R.id.fragmentPruebaNavigationBar->{ binding.toolBarPantallaPrincipal.setTitle("Navigation Bar") }
 
                 R.id.fragmentPruebaNavigationRail->{ binding.toolBarPantallaPrincipal.setTitle("Navigation Rail") }
+
+                R.id.fragmentPruebaBarraProgreso->{ binding.toolBarPantallaPrincipal.setTitle("Barras Progreso") }
 
             }
 

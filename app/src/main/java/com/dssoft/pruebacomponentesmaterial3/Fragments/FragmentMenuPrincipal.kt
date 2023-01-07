@@ -32,6 +32,7 @@ class FragmentMenuPrincipal: Fragment()
         binding.txtOpcionBotones.setOnClickListener {  navController.navigate(R.id.fragmentPruebaBotones) }
         binding.txtOpcionNavigationBar.setOnClickListener { navController.navigate(R.id.irFragmentPruebaNavigationBar) }
         binding.txtOpcionNavigationRail.setOnClickListener { navController.navigate(R.id.irFragmentPruebaNavigationRail) }
+        binding.txtOpcionBarraProgreso.setOnClickListener { navController.navigate(R.id.irFragmentPruebaBarraProgreso) }
 
         //*************************** Fin ClickListeners *****************************
 

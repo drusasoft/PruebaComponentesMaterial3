@@ -14,10 +14,13 @@
             app:destination="@id/fragmentPruebaBotones"/>
         <action
             android:id="@+id/irFragmentPruebaNavigationBar"
-            app:destination="@id/fragmentPruebaNavigationBar" />
+            app:destination="@id/fragmentPruebaNavigationBar"/>
         <action
             android:id="@+id/irFragmentPruebaNavigationRail"
-            app:destination="@id/fragmentPruebaNavigationRail" />
+            app:destination="@id/fragmentPruebaNavigationRail"/>
+        <action
+            android:id="@+id/irFragmentPruebaBarraProgreso"
+            app:destination="@id/fragmentPruebaBarraProgreso"/>
 
     </fragment>
 
@@ -34,6 +37,11 @@
     <fragment
         android:id="@+id/fragmentPruebaNavigationRail"
         android:name="com.dssoft.pruebacomponentesmaterial3.Fragments.FragmentPruebaNavigationRail"
-        android:label="FragmentPruebaNavigationRail" />
+        android:label="FragmentPruebaNavigationRail"/>
+
+    <fragment
+        android:id="@+id/fragmentPruebaBarraProgreso"
+        android:name="com.dssoft.pruebacomponentesmaterial3.Fragments.FragmentPruebaBarraProgreso"
+        android:label="FragmentPruebaBarraProgreso"/>
 
 </navigation>

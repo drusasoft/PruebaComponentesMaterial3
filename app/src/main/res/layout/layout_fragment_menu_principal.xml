@@ -53,4 +53,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtOpcionNavigationBar" />
 
+    <TextView
+        android:id="@+id/txtOpcionBarraProgreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="Prueba Barra Progreso"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_texto_pulsacion"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOpcionNavigationRail" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
