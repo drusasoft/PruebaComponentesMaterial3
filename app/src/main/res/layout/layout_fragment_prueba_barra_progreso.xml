@@ -14,6 +14,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+        <!-- ********* Barras de Progreso Indeterminadas ********* -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,6 +66,8 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+
+        <!-- ********* Barras de Progreso Determinadas ********* -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -125,7 +128,8 @@
                             android:layout_weight="1"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="5dp"
-                            android:text="Incrementar"/>
+                            android:text="Incrementar"
+                            app:strokeColor="@color/purple_700"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="@style/Widget.App.Button.OutlinedButton.EsquinasRecortadas"
@@ -135,7 +139,8 @@
                             android:layout_weight="1"
                             android:layout_marginLeft="5dp"
                             android:layout_marginRight="10dp"
-                            android:text="Decrementar"/>
+                            android:text="Decrementar"
+                            app:strokeColor="@color/purple_700"/>
 
                     </LinearLayout>
 
@@ -144,40 +149,180 @@
             </com.google.android.material.card.MaterialCardView>
 
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent">
-
-            <LinearLayout
+        <!-- ********* Barras de Progreso Borde Redondeado ********* -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="Estilo Multicolor"
-                    android:textColor="@color/purple_700"
-                    android:textStyle="bold"/>
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
-                <com.google.android.material.divider.MaterialDivider
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Borde Redondeado"
+                        android:textColor="@color/purple_700"
+                        android:textStyle="bold"/>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:indeterminate="true"
+                        app:trackCornerRadius="4dp"/>
+
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:indeterminate="true"
+                        app:trackCornerRadius="4dp"/>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ********* Barras de Progreso Multicolor ********* -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent">
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"/>
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Estilo Multicolor"
+                        android:textColor="@color/purple_700"
+                        android:textStyle="bold"/>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:indeterminate="true"
+                        app:indicatorColor="@array/array_colores"
+                        app:indeterminateAnimationType="disjoint"/>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="30dp"
+                        android:indeterminate="true"
+                        app:indeterminateAnimationType="contiguous"
+                        app:indicatorColor="@array/array_colores"/>
+
+                </LinearLayout>
 
 
-        </com.google.android.material.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ********* Barras de Progreso Estilo Tuneado ********* -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Circular con Estilo"
+                        android:textColor="@color/purple_700"
+                        android:textStyle="bold"/>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        style="@style/barraProgresoCircularTuneada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:indeterminate="true"/>
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        style="@style/barraProgresoCircularTuneada"
+                        android:id="@+id/barraProgresoCircularTuneada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"/>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.App.Button.OutlinedButton.EsquinasRecortadas"
+                        android:id="@+id/btnIncrementar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Incrementar"
+                        app:strokeColor="@color/purple_700"/>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
 
 
         </LinearLayout>

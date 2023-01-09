@@ -23,8 +23,10 @@ class FragmentPruebaBarraProgreso:Fragment()
 
         binding.barraProgresoLineal.max = 100
         binding.barraProgresoCircular.max = 100
-        binding.barraProgresoLineal.progress = 0
-        binding.barraProgresoCircular.progress = 0
+        binding.barraProgresoCircularTuneada.max = 100
+        binding.barraProgresoLineal.progress = progreso
+        binding.barraProgresoCircular.progress = progreso
+        binding.barraProgresoCircularTuneada.progress = progreso
 
         //********************* Listeners de los Botones *********************
 
@@ -44,6 +46,13 @@ class FragmentPruebaBarraProgreso:Fragment()
 
             binding.barraProgresoLineal.progress = progreso
             binding.barraProgresoCircular.progress = progreso
+        }
+
+        binding.btnIncrementar2.setOnClickListener {
+
+            if(progreso < 100) progreso += 10 else progreso = 0
+
+            binding.barraProgresoCircularTuneada.progress = progreso
         }
 
         //********************* Fin Listeners de los Botones *********************
